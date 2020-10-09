@@ -1,11 +1,11 @@
 <template lang="pug">
   div(class="hello")
-    h1() {{ state.message }}
+    h1() Clicked {{ state.counter }} times
     v-btn(@click="count") count
 </template>
 
 <script lang="ts">
-import { computed, defineComponent, onMounted, reactive, ref } from '@vue/composition-api'
+import { computed, defineComponent, reactive } from '@vue/composition-api'
 
 import { useStoreHelper } from '~/compositions'
 
@@ -13,20 +13,14 @@ export default defineComponent({
   name: 'hello-world',
   setup(props, context) {
     const { store } = useStoreHelper()
-    const counter = ref(0)
 
     const state = reactive({
-      message: computed(() => store.getters.getAppName),
+      counter: computed(() => store.getters.getCounter),
     })
 
     const count = () => {
-      counter.value += 1
-      store.actions.setAppName(`test ${counter.value}`)
+      store.actions.setCounter(state.counter + 1)
     }
-
-    onMounted(() => {
-      store.actions.setAppName(`test ${counter.value}`)
-    })
 
     return {
       state,
@@ -36,4 +30,7 @@ export default defineComponent({
 })
 </script>
 
-<style lang="stylus" scoped></style>
+<style lang="stylus" scoped>
+h1
+  margin 10px 0px
+</style>

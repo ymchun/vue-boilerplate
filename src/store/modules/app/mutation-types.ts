@@ -1,1 +1,1 @@
-export const APP_SET_APP_NAME = 'APP_SET_APP_NAME'
+export const APP_SET_COUNTER = 'APP_SET_COUNTER'

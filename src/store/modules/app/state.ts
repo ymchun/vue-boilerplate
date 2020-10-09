@@ -1,7 +1,7 @@
 import { AppState } from '~/store/interfaces'
 
 const state: AppState = {
-  appName: '',
+  counter: 0,
 }
 
 export default state

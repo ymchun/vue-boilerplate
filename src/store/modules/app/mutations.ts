@@ -4,8 +4,8 @@ import { AppState } from '~/store/interfaces'
 import mutationTypes from '~/store/mutation-types'
 
 const mutations = {
-  [mutationTypes.APP_SET_APP_NAME](state: AppState, payload: string) {
-    Vue.set(state, 'appName', payload)
+  [mutationTypes.APP_SET_COUNTER](state: AppState, payload: number) {
+    Vue.set(state, 'counter', payload)
   },
 }
 

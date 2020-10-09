@@ -1,8 +1,8 @@
 import { AppState } from '~/store/interfaces'
 
 const getters = {
-  getAppName(state: AppState) {
-    return state.appName
+  getCounter(state: AppState) {
+    return state.counter
   },
 }
 

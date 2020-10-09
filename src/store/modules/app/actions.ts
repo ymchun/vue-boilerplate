@@ -4,8 +4,8 @@ import { AppState } from '~/store/interfaces'
 import mutationTypes from '~/store/mutation-types'
 
 const actions = {
-  setAppName(context: ActionContext<AppState, any>, payload: string) {
-    context.commit(mutationTypes.APP_SET_APP_NAME, payload)
+  setCounter(context: ActionContext<AppState, any>, payload: number) {
+    context.commit(mutationTypes.APP_SET_COUNTER, payload)
   },
 }
 
