@@ -10,12 +10,12 @@ declare module 'store-helper' {
 
 type ActionHelper<T> = {
   [K in keyof T]: T[K] extends (a: any, payload?: infer P) => infer R
-    ? (payload?: P) => R
-    : T[K] extends (a: any, payload: infer P) => infer R
-      ? (payload: P) => R
-      : T[K] extends (a: any) => infer R
-        ? () => R
-        : T[K]
+  ? (payload?: P) => R
+  : T[K] extends (a: any, payload: infer P) => infer R
+  ? (payload: P) => R
+  : T[K] extends (a: any) => infer R
+  ? () => R
+  : T[K]
 }
 
 type GetterHelper<T> = {

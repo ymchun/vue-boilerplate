@@ -1,7 +1,7 @@
 <template lang="pug">
-  div(class="hello")
-    h1() Clicked {{ state.counter }} times
-    v-btn(@click="count") count
+.hello
+  h1 Clicked {{ state.counter }} times
+  v-btn(@click='count') count
 </template>
 
 <script lang="ts">

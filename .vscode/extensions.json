@@ -1,0 +1,10 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "editorconfig.editorconfig",
+    "octref.vetur",
+    "streetsidesoftware.code-spell-checker",
+    "sysoev.language-stylus",
+    "thisismanta.stylus-supremacy",
+  ]
+}
