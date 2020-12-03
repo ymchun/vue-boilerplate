@@ -1,5 +1,6 @@
 {
   "recommendations": [
+    "antfu.i18n-ally",
     "dbaeumer.vscode-eslint",
     "editorconfig.editorconfig",
     "octref.vetur",

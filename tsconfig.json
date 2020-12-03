@@ -7,21 +7,43 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "jsx": "preserve",
-    "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
+    "lib": [
+      "dom.iterable",
+      "dom",
+      "esnext",
+      "scripthost"
+    ],
     "module": "esnext",
     "moduleResolution": "node",
     "noImplicitThis": false,
     "noUnusedLocals": true,
+    "resolveJsonModule": true,
     "sourceMap": true,
     "strict": true,
     "strictPropertyInitialization": false,
     "target": "esnext",
-    "typeRoots": ["node_modules/@types", "src/types/*"],
+    "typeRoots": [
+      "node_modules/@types",
+      "src/types/*"
+    ],
     "paths": {
-      "*": ["node_modules/*", "src/types/*"],
-      "~/*": ["src/*"]
+      "*": [
+        "node_modules/*",
+        "src/types/*"
+      ],
+      "~/*": [
+        "src/*"
+      ]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "tests/**/*.ts", "tests/**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }
