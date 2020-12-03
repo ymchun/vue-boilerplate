@@ -32,8 +32,3 @@ export default defineComponent({
   },
 })
 </script>
-
-<style lang="stylus" scoped>
-h1
-  margin 10px 0px
-</style>

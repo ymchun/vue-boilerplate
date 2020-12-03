@@ -1,6 +1,6 @@
 <template lang="pug">
-.home
-  img(src='../assets/logo.png')
+div
+  img(src='@/assets/logo.png')
   hello-world
 </template>
 
