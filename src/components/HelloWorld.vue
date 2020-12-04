@@ -1,5 +1,5 @@
 <template lang="pug">
-.hello.d-flex.flex-column.align-center
+.d-flex.flex-column.align-center
   h1.my-12 {{ $t("count_msg", { num: state.counter }) }}
   v-btn.my-4(@click='count') {{ $t("count") }}
   v-btn.my-4(@click='switchLanguage') {{ $t("toggle_lang") }}
