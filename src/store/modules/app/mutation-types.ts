@@ -1,1 +1,0 @@
-export const APP_SET_COUNTER = 'APP_SET_COUNTER'

@@ -1,19 +1,24 @@
 <template lang="pug">
-div
+.d-flex.flex-column.align-center
   img(src='@/assets/logo.png')
-  hello-world
+  language-switcher
+  hacker-news
 </template>
 
 <script lang="ts">
 import { defineComponent } from '@vue/composition-api'
 
-import HelloWorld from '~/components/HelloWorld.vue'
+import HackerNews from '~/components/HackerNews.vue'
+import LanguageSwitcher from '~/components/LanguageSwitcher.vue'
 
 export default defineComponent({
   name: 'home',
   components: {
-    HelloWorld,
+    HackerNews,
+    LanguageSwitcher,
   },
   setup(props, context) {},
 })
 </script>
+
+<style lang="stylus" scoped></style>

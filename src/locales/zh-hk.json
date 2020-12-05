@@ -1,5 +1,5 @@
 {
-  "count": "按",
-  "count_msg": "按了 {num} 次",
-  "toggle_lang": "轉換語言"
+  "hacker_news.time": "時間",
+  "hacker_news.by": "作者",
+  "hacker_news.title": "標題"
 }

@@ -30,6 +30,9 @@
     }
   },
   "cSpell.words": [
+    "camelize",
+    "decamelize",
+    "normalizr",
     "vuetify",
     "vuex"
   ],

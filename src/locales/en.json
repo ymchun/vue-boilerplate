@@ -1,5 +1,5 @@
 {
-  "count": "Count",
-  "count_msg": "Clicked {num} times",
-  "toggle_lang": "Toggle Language"
+  "hacker_news.time": "Time",
+  "hacker_news.by": "By",
+  "hacker_news.title": "Title"
 }
